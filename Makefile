@@ -7,5 +7,5 @@ build-prod:
 serve:
 	./vendor/bin/jigsaw serve
 
-publish:
+publish: build-prod
 	git subtree push --prefix build_production origin gh-pages
